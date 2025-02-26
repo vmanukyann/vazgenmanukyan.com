@@ -1,39 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scrollbar-width: none; /* For Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
 .App {
   text-align: center;
   background-color: rgba(13, 253, 0, 0.13);
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Arial', sans-serif;
 }
 
 h1 {
   font-size: 2em;
   color: black;
   margin: 0; 
-  line-height: 1; 
+  line-height: 1.5; 
 }
 
 h2 {
   font-size: 4em;
   color: rgba(38, 0, 255, 0.578);
-  margin: 0; /* Ensure no margin */
-  line-height: 1; /* Adjust line height */
+  margin: 0; 
+  line-height: 1.5; 
   text-shadow: 0 0 10px rgba(0, 217, 255, 0.411), 0 0 10px rgba(38, 0, 255, 0.5), 0 0 10px rgba(38, 0, 255, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-height: 900vh; /* Increase the minimum height to enable more scrolling */
 }
 
 .App-header {
