@@ -36,32 +36,31 @@ function App() {
   const projects = [
     {
       title: "vazgenmanukyan.com",
-      description: "Full-stack web application with React and Flask. Features include user authentication, payment processing, and admin dashboard.",
+      description: "A personal portfolio website showcasing my skills, projects, and contact information. Built with React and Tailwind CSS for a modern look.",
       tech: ["React", "Flask"],
-      github: "#",
+      github: "https://github.com/vmanukyann/vazgenmanukyan.com",
       live: "#"
     },
     {
-      title: "PennChatbot",
-      description: "Collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      tech: ["React", "Socket.io", "Express", "PostgreSQL"],
-      github: "#",
+      title: "Penn Chatbot",
+      description: "A chatbot application that integrates with Penn High School's systems to provide students with quick access to information and services.",
+      tech: ["React", "MongoDB", "Docker", "Flask"],
+      github: "https://github.com/vmanukyann/Penn-Chatbot",
       live: "#"
     },
     {
-      title: "Weather Analytics Dashboard",
-      description: "Data visualization dashboard that aggregates weather data from multiple APIs and presents insights through interactive charts.",
-      tech: ["React", "D3.js", "Python", "FastAPI"],
+      title: "Aunalytics",
+      description: "A chatbot application that integrates with Penn High School's systems to provide students with quick access to information and services.",
+      tech: ["React", "MongoDB", "Docker", "Flask"],
       github: "#",
       live: "#"
     }
   ];
 
   const skills = [
-    { category: "Frontend", icon: <Code className="w-6 h-6" />, items: ["React", "JavaScript", "TypeScript", "CSS3", "HTML5", "Tailwind CSS"] },
-    { category: "Backend", icon: <Database className="w-6 h-6" />, items: ["Node.js", "Python", "Express", "FastAPI", "PostgreSQL", "MongoDB"] },
-    { category: "Design", icon: <Palette className="w-6 h-6" />, items: ["Figma", "Adobe XD", "UI/UX Design", "Responsive Design", "Prototyping"] },
-    { category: "Tools", icon: <Globe className="w-6 h-6" />, items: ["Git", "Docker", "AWS", "Vercel", "Firebase", "Jest"] }
+    { category: "Frontend", icon: <Code className="w-6 h-6" />, items: ["React", "JavaScript", "HTML", "Tailwind CSS"] },
+    { category: "Backend", icon: <Database className="w-6 h-6" />, items: ["Python", "Flask",  "MongoDB"] },
+    { category: "Tools", icon: <Globe className="w-6 h-6" />, items: ["Git", "Docker",] }
   ];
 
   return (
@@ -91,17 +90,16 @@ function App() {
             <h1 className="hero-name">
               <span className="gradient-text">Vazgen Manukyan</span>
             </h1>
-            <p className="hero-subtitle">Full Stack Developer & Designer</p>
+            <p className="hero-subtitle">Full Stack - AI Develepor - Prompt Engineer</p>
             <p className="hero-description">
-              I craft digital experiences that blend beautiful design with powerful functionality. 
-              Passionate about creating solutions that make a difference.
+              I am a passionate developer with a focus on creating innovative solutions using the latest technologies.
             </p>
             <div className="hero-buttons">
               <button 
                 onClick={() => scrollToSection('projects')} 
                 className="btn btn-primary"
               >
-                View My Work
+                My Work
               </button>
               <button 
                 onClick={() => scrollToSection('contact')} 
@@ -130,8 +128,8 @@ function App() {
       {/* Projects Section */}
       <section id="projects" className="projects">
         <div className="container">
-          <h2 className="section-title">Featured Projects</h2>
-          <p className="section-subtitle">A showcase of my recent work and creative solutions</p>
+          <h2 className="section-title">Projects & Employment</h2>
+          <p className="section-subtitle">A showcase of my work</p>
           
           <div className="projects-grid">
             {projects.map((project, index) => (
